@@ -17,7 +17,7 @@ class Plugin extends PluginBase
     {
         return [
             'name'        => 'Telegram',
-            'description' => 'No description provided yet...',
+            'description' => 'Для работы с вашим ботом',
             'author'      => 'VseProsto',
             'icon'        => 'icon-leaf'
         ];
