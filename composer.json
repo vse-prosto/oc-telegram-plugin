@@ -1,0 +1,11 @@
+{
+    "name": "vseprosto/telegram-plugin",
+    "type": "october-plugin",
+    "description": "Telegram Bot",
+    "require": {
+        "october/system": "^2.1.2",
+        "composer/installers": "~1.0",
+        "php": ">=7.3",
+        "longman/telegram-bot": "^0.74.0"
+    }
+}
