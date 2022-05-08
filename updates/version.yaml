@@ -1,1 +1,38 @@
-1.0.1: First version of Telegram
+1.0.1:
+    - 'Первичная установка, создание таблиц'
+    - create_vseprosto_telegram_conversation_table.php
+    - create_vseprosto_telegram_request_limiter_table.php
+    - create_vseprosto_telegram_callback_query_table.php
+    - create_vseprosto_telegram_chat_member_updated_table.php
+    - create_vseprosto_telegram_chat_table.php
+    - create_vseprosto_telegram_chosen_inline_result_table.php
+    - create_vseprosto_telegram_edited_message_table.php
+    - create_vseprosto_telegram_inline_query_table.php
+    - create_vseprosto_telegram_message_table.php
+    - create_vseprosto_telegram_poll_answer_table.php
+    - create_vseprosto_telegram_poll_table.php
+    - create_vseprosto_telegram_pre_checkout_query_table.php
+    - create_vseprosto_telegram_shipping_query_table.php
+    - create_vseprosto_telegram_telegram_update_table.php
+    - create_vseprosto_telegram_user_chat_table.php
+    - create_vseprosto_telegram_user_table.php
+1.0.2:
+    - 'Добавление внешних ключей'
+    - add_foreign_keys_to_vseprosto_telegram_conversation_table.php
+    - add_foreign_keys_to_vseprosto_telegram_callback_query_table.php
+    - add_foreign_keys_to_vseprosto_telegram_chat_member_updated_table.php
+    - add_foreign_keys_to_vseprosto_telegram_chosen_inline_result_table.php
+    - add_foreign_keys_to_vseprosto_telegram_edited_message_table.php
+    - add_foreign_keys_to_vseprosto_telegram_inline_query_table.php
+    - add_foreign_keys_to_vseprosto_telegram_message_table.php
+    - add_foreign_keys_to_vseprosto_telegram_poll_answer_table.php
+    - add_foreign_keys_to_vseprosto_telegram_pre_checkout_query_table.php
+    - add_foreign_keys_to_vseprosto_telegram_shipping_query_table.php
+    - add_foreign_keys_to_vseprosto_telegram_telegram_update_table.php
+    - add_foreign_keys_to_vseprosto_telegram_user_chat_table.php
+1.0.3:
+    - 'Добавлена связь с пользователем CMS'
+    - add_user_connection.php
+1.0.4:
+    - 'Поле email не обязательно'
+    - users_update_email_column.php

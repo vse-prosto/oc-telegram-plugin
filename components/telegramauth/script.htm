@@ -1,0 +1,20 @@
+<script async src="https://telegram.org/js/telegram-widget.js?15"
+        data-telegram-login="HomeRuleBot"
+        data-size="large"
+        data-onauth="onTelegramAuth(user)"
+        data-request-access="write">
+</script>
+<script type="text/javascript">
+    function onTelegramAuth(user) {
+        console.log(user);
+        let authUrl = '/telehook_authorization/';
+        authUrl += (authUrl.indexOf('?') >= 0) ? '&' : '?';
+        let params = [];
+        for (let key in user) {
+            params.push(key + '=' + encodeURIComponent(user[key]));
+        }
+        authUrl += params.join('&');
+        $.request('{{ __SELF__ }}::onAuthorization',{data:user}).done(function() {
+        })
+    }
+</script>

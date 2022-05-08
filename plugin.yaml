@@ -1,0 +1,26 @@
+#
+# Plugin Registration
+#
+
+plugin:
+  name: TelegramBot
+  description: Адаптацияю библиотеки longman/telegram-bot
+  author: VseProsto
+  icon: icon-paper-plane-o
+  homepage: https://github.com/vse-prosto/oc-telegram-plugin
+
+settings:
+  deploy:
+    label: TelegramBot
+    description: Адаптацияю библиотеки longman/telegram-bot
+    category: CATEGORY_SYSTEM
+    icon: icon-paper-plane-o
+    url: vseprosto/telegram/settings
+    order: 500
+    keywords: deploy
+    permissions: [vseprosto.telegram.manage]
+
+permissions:
+  vseprosto.telegram.manage:
+    tab: vseprosto
+    label: Manage TelegramBot

@@ -1,0 +1,9 @@
+<div id="telegram_button"></div>
+<script>
+    window.onload = function() {
+        $(document).ready(function() {
+            $.request('{{ __SELF__ }}::onGetAuthButton').done(function() {
+            })
+        })
+    };
+</script>
