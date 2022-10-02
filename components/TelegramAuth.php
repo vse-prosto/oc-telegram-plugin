@@ -63,9 +63,9 @@ class TelegramAuth extends ComponentBase
             $user->telegram_id = $auth_data['id'];
 
             $user->is_activated = true;
-            $user->activated_at = new Carbon;
+            $user->activated_at = new \Carbon;
 
-            $user->password = $user->password_confirmation = Str::random(10);
+            $user->password = $user->password_confirmation = \Str::random(10);
 
             $user->save();
         }
