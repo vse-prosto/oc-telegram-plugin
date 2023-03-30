@@ -46,6 +46,10 @@ class Plugin extends PluginBase
         if ($obPluginManager->exists('RainLab.User')) {
             \RainLab\User\Models\User::extend(function ($model) {
                 $model->belongsTo['telegram_user'] = [TelegramUser::class,'key' => 'telegram_id'];
+                $rules = $model->rules;
+                $rules['email'] = 'required_without:telegram_id|between:6,255|email|unique:users';
+                $model->rules = $rules;
+
             });
         }
     }
