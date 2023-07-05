@@ -5,6 +5,6 @@
     "require": {
         "october/system": "^3.0",
         "php": ">=8.1",
-        "longman/telegram-bot": "^0.8"
+        "longman/telegram-bot": "*"
     }
 }
